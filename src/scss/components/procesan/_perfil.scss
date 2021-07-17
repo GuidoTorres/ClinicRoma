@@ -1,0 +1,18 @@
+.procesa__perfil {
+  //   background-color: palegreen;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+.procesa__perfil-img {
+  height: 222px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 100%;
+  }
+}

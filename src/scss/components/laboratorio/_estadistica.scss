@@ -1,0 +1,63 @@
+.laboratorio__estadistica {
+  div {
+    div {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      select {
+        width: 300px;
+      }
+    }
+    textarea {
+      width: 100%;
+      height: 58px;
+    }
+  }
+}
+
+.laboratorio__estadistica-intervalo .tiempo {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  label {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 464px) {
+  .laboratorio__estadistica {
+    div {
+      div {
+        select {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .laboratorio__estadistica {
+    div {
+      div {
+        select {
+          width: 150px;
+        }
+      }
+    }
+  }
+  .laboratorio__estadistica-intervalo .tiempo {
+    flex-direction: column;
+    label {
+      margin-right: 5px;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+}

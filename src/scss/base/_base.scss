@@ -1,0 +1,534 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 0.9em;
+  color: $color-text-oscuro;
+}
+label {
+  font-size: 0.9em !important;
+}
+p {
+  margin-bottom: 0px;
+}
+h6 {
+  font-size: 0.9em;
+}
+
+.titulo{
+
+  text-align: left;
+  color: $color-primary;
+}
+
+//SPINNER DE CARGA
+
+.spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .spinner-border {
+    color: $color-primary;
+  }
+}
+
+// TODO INPUT SELECT TEXTAREA
+textarea,
+select,
+select.form-select,
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="time"] {
+  border-radius: 3px;
+  border: 1px solid $color-borde !important;
+  border: none;
+  color: $color-text-oscuro;
+  outline: none;
+  padding: 3px 5px 3px 10px;
+  background-color: transparent;
+  font-size: 0.9em !important;
+  &::placeholder {
+    color: $color-text-oscuro;
+    font-size: 0.9em;
+  }
+}
+
+input[type="checkbox"] {
+  border: 1px solid $color-borde !important;
+  box-shadow: none !important;
+  font-size: 0.9rem !important;
+  margin-top: 0px;
+  &:checked {
+    background-color: $color-primary;
+    border: none !important;
+    box-shadow: none;
+  }
+}
+
+// TODO BOTONES
+.botones {
+  background-color: $color-primary;
+  border-radius: 5px;
+  border: none;
+  color: $color_white;
+  padding: 5px 10px;
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: darken($color: $color-primary, $amount: 3);
+    transition: background-color 0.5 ease;
+  }
+}
+
+// TODO DATA TABLE
+.sc-dlnjwi.ezEBKV.rdt_TableHeadRow {
+  background-color: $color-primary;
+  border-radius: 8px 8px 0 0;
+  div {
+    color: $color-white;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+.sc-fnVZcZ .cDmETx .rdt_TableHeader {
+  // display: none !important;
+  background-color: yellowgreen;
+}
+
+.cDmETx {
+  min-height: 20px !important;
+}
+
+.cchvzS:not(:last-of-type) {
+  border-bottom-color: transparent;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+}
+
+.table__icono {
+  font-size: 9rem;
+  color: #f0f8ff;
+}
+
+.table__tablebutton {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: $color-primary;
+}
+
+// TODO NAVBAR
+.menu {
+  background-color: $color-secondary;
+}
+
+// TODO MODAL
+.ReactModalPortal > div {
+  opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 5999;
+}
+
+.modal-fondo {
+  background-color: rgba(0, 0, 0, 0.404);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+  opacity: 2;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.title__modal {
+  background-color: $color-primary;
+  border-radius: 3px 3px 0px 0px;
+  color: $color-white;
+  font-size: 1.5rem;
+  padding: 7px;
+  text-align: center;
+}
+
+.modal {
+  background: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  display: inline;
+  outline: none;
+  padding: 10px;
+}
+
+// TODO MODAL ADMIN REGISTRO CLINICA
+.modal__clinica {
+  max-height: 80%;
+  width: 80%;
+  max-width: 1320px;
+  z-index: 1000;
+}
+
+// TODO MODAL ADMIN REGISTRO EMPRESA
+.modal__empresa {
+  max-height: 80%;
+  width: 80%;
+  max-width: 1320px;
+}
+
+// TODO MODAL ADMIN USUARIO
+.modal__usuario {
+  max-height: 50%;
+  max-width: 50%;
+}
+
+// TODO MODAL ADMIN SERVICIO
+.modal__servicio {
+  height: 27%;
+  width: 25%;
+}
+
+// TODO MODAL ADMIN EDITAR SERVICIO
+.modal__CrearServicio {
+  height: initial;
+  width: 75%;
+  max-height: 640px;
+  max-width: 385px;
+}
+
+// TODO MODAL ADMIN EDITAR SERVICIO
+.modal__EServicio {
+  height: initial;
+  width: 75%;
+  max-height: 6200px;
+  max-width: 475px;
+}
+
+// TODO MODAL ADMIN TRABAJADOR
+.modal__trabajador {
+  height: 70%;
+  width: 80%;
+  max-height: 420px;
+  max-width: 735px;
+}
+
+// TODO MODAL TOMAN BARCODE
+// .modal__barcode {
+//   max-height: 40%;
+//   max-width: 30%;
+// }
+
+// TODO MODAL GENERAR ATENCION RECEPCION Y ADMIN
+.modal__generarAtencion {
+  height: 85%;
+  width: 90%;
+  max-height: 620px;
+  max-width: 1320px;
+  // max-height: 80%;
+  // max-width: 1320px;
+}
+
+.modal__tomanBarcode {
+  // height: 45%;
+  // width: 25%;
+  max-height: 294px;
+  max-width: 275px;
+}
+
+// TODO MODAL ORGANIZADOR PACIENTE
+.modal__pacientemap {
+  background: white;
+  border-radius: 5px;
+  color: rgb(51, 51, 51);
+  display: inline;
+  max-height: 450px;
+  max-width: 600px;
+  outline: none;
+  padding: 10px;
+}
+.modal__horario {
+  background-color: $color-white;
+  max-height: 450px;
+  max-width: 800px;
+  padding: 10px;
+  font-size: 0.9rem;
+  select,
+  select.form-select,
+  input[type="number"] {
+    border: none;
+  }
+  .react-datetime-picker__wrapper {
+    border: none;
+  }
+  .boton__horario {
+    padding: 5px 10px;
+    border: none;
+    background-color: $color-primary;
+    color: $color-white;
+    border-radius: 5px;
+    float: right;
+  }
+}
+.modal__horario .react-datetime-picker__wrapper {
+  textarea,
+  select,
+  select.form-select,
+  input[type="number"],
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  input[type="time"] {
+    border: none !important;
+  }
+}
+
+// TODO MODAL AGENTE VENTAS PERSONA
+.modal__persona {
+  max-height: 55%;
+  max-width: 400px;
+}
+
+// TODO MODAL FACTURACION EMPRESA
+.mfacturacion__empresa {
+  max-height: 45%;
+  max-width: 45%;
+}
+
+// TODO MODAL FACTURACION PARTICULAR
+.mfacturacion__particular {
+  max-height: 83%;
+  max-width: 80%;
+}
+
+// TODO MODAL LABORATORIO SUBIRLABORATORIO
+.mlaboratorio_subir {
+  height: 50%;
+  width: 85%;
+}
+.mlaboratorio_subir-eclea {
+  height: 64%;
+  width: 75%;
+}
+.mlaboratorio_subir-rapida {
+  height: 71%;
+  width: 75%;
+}
+@media screen and (min-width: 700px) {
+  .mlaboratorio_subir {
+    height: 51%;
+    width: 55%;
+    max-height: 316px;
+    max-width: 370px;
+  }
+  .mlaboratorio_subir-eclea {
+    height: 64%;
+    width: 55%;
+    max-height: 410px;
+    max-width: 400px;
+  }
+  .mlaboratorio_subir-rapida {
+    height: 71%;
+    width: 55%;
+    max-height: 448px;
+    max-width: 400px;
+  }
+}
+// TODO MODAL RECEPCION USUARIO
+.mrecepcion__usuario {
+  height: 85%;
+  width: 85%;
+  max-height: 855px;
+  max-width: 1320px;
+}
+
+// TODO MODAL BARCODE
+.modal__barcode {
+  height: auto;
+  max-width: 275px;
+}
+
+// TODO MODAL SUBCATEGORIA
+.modal__subcategoria {
+  height: initial;
+  width: 75%;
+  max-height: 368px;
+  max-width: 555px;
+}
+
+// *momentaneo, luego se elimina
+.table > :not(:last-child) > :last-child > * {
+  border-bottom: none;
+}
+
+// TODOS MODAL HISTORIAL PRECIO
+.modal__hprecio {
+  height: initial;
+  width: 75%;
+  max-height: 280px;
+  max-width: 450px;
+}
+
+// TODO AVATAR
+.image__upload {
+  align-items: center;
+  background-image: url("../../assets/icons/upload.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  width: 100%;
+  .image__carga {
+    height: 50px !important;
+  }
+  .image__avatar {
+    height: 200px;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+// TODO ALERTA
+.swal2-icon.swal2-warning.swal2-icon-show {
+  display: none !important;
+}
+.swal2-title {
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  text-transform: uppercase !important;
+}
+.swal2-actions {
+  .swal2-confirm {
+    background-color: $color-primary !important;
+  }
+  .swal2-cancel {
+    background-color: $color-secondary !important;
+  }
+  button {
+    padding: 5px 10px;
+  }
+}
+.swal2-icon .swal2-success .swal2-icon-show {
+  display: none !important;
+}
+
+// TODO CALIFICACION
+.calificacion {
+  color: gold;
+  font-size: 1.3rem;
+  letter-spacing: 10px;
+  margin: 20px 0px;
+}
+
+// TODO CALENDARIO
+.calendario {
+  width: 100% !important;
+  height: 100% !important;
+  .calendario__content {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+.calendar-screen {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.rbc-calendar {
+  height: 100vh !important;
+  width: 100% !important;
+}
+
+.rbc-today {
+  background-color: transparent !important;
+}
+
+.fab {
+  border-radius: 100%;
+  bottom: 20px;
+  font-size: 1rem;
+  padding: 5px;
+  position: fixed;
+  right: 20px;
+  width: 30px;
+}
+
+.mselect {
+  margin-top: 10px;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .mselect__item {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mfacturacion__empresa {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .modal__usuario {
+    // background-color: orchid;
+    max-width: 70%;
+  }
+  .mfacturacion__empresa {
+    max-width: 85%;
+  }
+}
+
+@media screen and (min-height: 625px) {
+  .modal__clinica,
+  .modal__empresa {
+    max-height: 597px;
+  }
+}
+@media screen and (min-height: 630px) {
+  .modal__subcategoria {
+    height: 42%;
+  }
+  .modal__hprecio {
+    height: 43%;
+  }
+  .modal__EditarServicio {
+    height: 43%;
+  }
+}
+@media screen and (min-width: 481px) {
+  .modal__subcategoria {
+    width: 50%;
+  }
+  .modal__barcode {
+    height: auto;
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .modal__EditarServicio,
+  .modal__hprecio {
+    width: 35%;
+  }
+}

@@ -1,0 +1,188 @@
+.generarAtencion {
+  .datosPaciente {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container1 {
+  }
+  .container2 {
+    .containerPDF {
+      display: none;
+      visibility: hidden;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 15px 15px;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      height: 350px;
+    }
+    .containerPDF1 {
+      display: none;
+      visibility: hidden;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 15px 15px;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: justify;
+      height: 200px;
+    }
+    .containerPDF2 {
+      display: none;
+      visibility: hidden;
+
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 15px 15px;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .botones {
+      margin-top: 10px;
+      width: 100%;
+      background-color: none;
+    }
+  }
+
+  .botones2 {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+    button:nth-child(1) {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .generarAtencion {
+    .container2 {
+      .containerBotones {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          width: 70%;
+          margin-right: 10px;
+        }
+      }
+    }
+    .botones2 {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+
+      button:nth-child(1) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+//CONTENEDOR DE CAMARA
+.content__camera {
+  flex-direction: column;
+  align-items: initial !important;
+  justify-content: center;
+
+  video {
+    padding: 10px 0 0;
+    width: 100%;
+  }
+  button {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .generarAtencion {
+    .datosPaciente {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .container1 {
+      .tipoServicio {
+        display: flex;
+        div {
+          display: flex;
+          align-items: center;
+          width: 30%;
+
+          label {
+            width: 40%;
+          }
+        }
+        div:nth-child(2) {
+          margin-left: 30px;
+        }
+      }
+    }
+    .container2 {
+      display: flex;
+      flex-direction: row;
+      width: 98%;
+      height: 400px;
+
+      .containerBotones {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          width: 80%;
+          margin-right: 10px;
+        }
+      }
+      .contenedorPDF {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        .containerPDF {
+          width: 100%;
+          flex-direction: row;
+        }
+        .containerPDF1 {
+          width: 100%;
+          height: 300px;
+          margin-top: 40px;
+        }
+        .containerPDF2 {
+          width: 100%;
+        }
+      }
+
+      .botones {
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+
+    .botones2 {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+
+      button:nth-child(1) {
+        margin-right: 20px;
+      }
+    }
+  }
+}

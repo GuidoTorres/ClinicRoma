@@ -1,0 +1,15 @@
+.mregistro__servicios {
+  padding: 0px;
+  margin: 0px;
+  div {
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      input {
+        width: 50%;
+      }
+    }
+  }
+}

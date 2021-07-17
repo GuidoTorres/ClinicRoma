@@ -1,0 +1,142 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-secondary;
+
+  .containerLogo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .buttonNav {
+      outline: none;
+      border: none;
+      width: 10%;
+      font-size: 20px;
+      background-color: $color-secondary;
+      i {
+        cursor: pointer;
+      }
+    }
+    .navbarLink {
+      width: 90%;
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+    }
+
+    .logoImg {
+      width: 50px;
+      margin-right: 20px;
+    }
+  }
+  .navbar-nav {
+    display: none;
+  }
+
+  .navBarUl {
+    background-color: $color-secondary;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 180px;
+    float: left;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logoSide {
+      background-color: white;
+      height: 79px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 40px;
+      }
+    }
+    .navUl {
+      display: flex;
+      flex-direction: column;
+      // margin-top: 12vh;
+      font-size: 15px;
+      text-align: center;
+      // margin-top: 100px;
+
+      li {
+        color: white;
+        font-size: 20px;
+      }
+      :hover {
+        color: white;
+        text-decoration: underline;
+      }
+
+      .navLink {
+        color: white;
+      }
+    }
+
+    .btnCerrar {
+      color: white;
+      cursor: pointer;
+      // margin-top: 100px;
+      margin: 25px 0;
+
+      i {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .navbar {
+    .navBarUl {
+      width: 220px;
+    }
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .navbar {
+    .navBarUl {
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    .containerLogo {
+      width: 30%;
+      .buttonNav {
+        display: none;
+      }
+      .navbarLink {
+        width: 100%;
+        justify-content: flex-start;
+      }
+    }
+    .navBarUl {
+      display: none;
+      visibility: hidden;
+      border: 1px solid red;
+    }
+
+    .navbar-nav {
+      display: flex;
+      font-size: 12px;
+    }
+  }
+}

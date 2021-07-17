@@ -1,0 +1,261 @@
+.adminregistro__clinica {
+  .card {
+    border: none;
+    box-shadow: $box-shadow;
+    margin: 10px 0px;
+    .card-body {
+      button {
+        display: block;
+        width: 100%;
+      }
+      img {
+        height: 250px;
+        width: 100%;
+      }
+    }
+  }
+}
+// ?MODAL REGISTRO CLINICA
+.adminregistro__option {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  label {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+
+    i {
+      color: $color-primary;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// ?Modal cliente
+.mregistro__cliente {
+  margin: 0px;
+  // padding: 0px;
+  .mregistro__clinica {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    div {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      width: 49%;
+      input {
+        width: 60%;
+      }
+    }
+  }
+}
+
+.mregistro__tipo {
+  margin: 20px 0px;
+  div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    label {
+      margin-left: 5px;
+    }
+  }
+}
+
+.mregistro__tiempo {
+  div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    label {
+      margin-right: 10px;
+    }
+    input {
+      width: 50%;
+    }
+  }
+}
+.mregistro__fecha {
+  div {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    input {
+      margin-right: 2px;
+    }
+    label {
+      margin-right: 15px;
+    }
+  }
+}
+.mregistro__ubicacion {
+  .icons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    p {
+      margin-bottom: 0px;
+    }
+    i {
+      color: $color-primary;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+  }
+  .mapa {
+    img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+.mregistro__logo {
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 10px;
+  }
+  .img_upload {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.list-botones {
+  float: right;
+  margin-top: 15px;
+  button {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+  }
+}
+
+// ?MODAL REGISTRO EMPRESA
+.mregistro__empresa {
+  margin: 0px;
+  padding: 0px;
+  .mregistro__datos {
+    div {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      input,
+      select {
+        width: 50%;
+      }
+    }
+  }
+  .mregistro__contacto {
+    div {
+      div {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      input,
+      select {
+        width: 50%;
+      }
+    }
+  }
+  .mregistro__recursos {
+    div {
+      div {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      input,
+      select {
+        width: 50%;
+      }
+    }
+  }
+}
+.mregistro__facturacion {
+  div {
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    input,
+    select {
+      width: 50%;
+    }
+  }
+}
+.mregistro__botones {
+  float: right;
+  margin-top: 20px;
+}
+
+@media (max-width: 564px) {
+  .mregistro__cliente {
+    .mregistro__clinica {
+      flex-direction: column;
+      div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+    .mregistro__fecha {
+      label {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .adminregistro__option {
+    flex-direction: column;
+    div {
+      width: 100%;
+      margin: 10px 0px;
+      input {
+        width: 100%;
+      }
+      label {
+        float: right;
+        margin-top: 20px;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .mregistro__empresa {
+    .mregistro__datos {
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        input,
+        select {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

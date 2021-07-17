@@ -1,0 +1,44 @@
+.mreceptcion__crearusuario {
+  margin: 0px;
+  // padding: 0px;
+  div {
+    margin-bottom: 10px;
+    width: 100%;
+    input {
+      width: 100%;
+    }
+    div {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      input,
+      select {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.recepcion__estadistica {
+  // background-color: darkturquoise;
+  div {
+    // background-color: deeppink;
+    div {
+      // background-color: deepskyblue;
+
+      div {
+        div {
+          // background-color: fuchsia;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 5px;
+          select {
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}

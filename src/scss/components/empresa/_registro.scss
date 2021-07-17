@@ -1,0 +1,21 @@
+.containerRegistro{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div{
+        display: flex;
+        align-items: center;
+
+        .cargar{
+            display: none;
+        }
+        p{
+            margin-left: 20px;
+        }
+        i{
+            margin-left: 6px;
+        }
+    }
+}

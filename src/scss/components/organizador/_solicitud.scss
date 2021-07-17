@@ -1,0 +1,129 @@
+.osolicitud__title {
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+  color: $color-primary;
+}
+.osolicitud__caja1 {
+  width: 50%;
+  .table {
+    .thead,
+    tr,
+    th {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .tbody,
+    tr,
+    td {
+      padding: 4px 10px;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .osolicitud {
+    .osolicitud__caja1 {
+      width: 100%;
+    }
+  }
+}
+
+// !datos calendario
+.organizador__datos {
+  margin-top: 15px;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    div {
+      width: 48%;
+    }
+  }
+  label {
+    margin-right: 5px;
+  }
+  i {
+    cursor: pointer;
+  }
+}
+.organizador__detalle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  label {
+    margin-right: 5px;
+  }
+  input {
+    width: 90%;
+  }
+}
+.organizador__transportista {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  label {
+    width: 35%;
+    margin-right: 5px;
+  }
+  select {
+    width: 40%;
+  }
+}
+.organizador__datostransportista {
+  display: flex;
+  label {
+    margin-right: 5px;
+  }
+  input {
+    margin-right: 5px;
+  }
+}
+.organizador__datostransportistas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .organizador__datostransportistas {
+    flex-direction: column;
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .organizador__datos {
+    background-color: orange;
+    div {
+      background-color: orangered;
+      div {
+        background-color: orchid;
+        input {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .organizador__transportista {
+    background-color: rgb(73, 197, 255);
+    select {
+      width: 50%;
+    }
+  }
+}

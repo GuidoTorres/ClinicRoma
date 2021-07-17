@@ -1,0 +1,35 @@
+.mregistro__usuario {
+  margin: 0px;
+  padding: 0px;
+  div {
+    div {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      input {
+        width: 50%;
+      }
+    }
+  }
+  button {
+    float: right;
+    // width: 20%;
+  }
+}
+
+@media (max-width: 619px) {
+  .mregistro__usuario {
+    div {
+      div {
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

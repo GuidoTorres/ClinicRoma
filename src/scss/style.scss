@@ -1,0 +1,50 @@
+@import './base/variables';
+@import './base/base';
+
+// *Admin general
+@import './components/admin/registro';
+@import './components/admin/usuario';
+@import './components/admin/servicio';
+@import './components/admin/trabajador';
+@import './components/admin/estadistica';
+
+// *Organizador
+@import './components/organizador/solicitud';
+@import './components/organizador/paciente';
+
+// *Procesan Muestran
+@import './components/procesan/perfil';
+
+// *Toman Muestra
+@import './components/toman/reserva';
+
+// *Agente de ventas
+@import './components/agenteventas/agenteventas';
+
+// *Laboratorio
+@import './components/laboratorio/subir';
+@import './components/laboratorio/estadistica';
+
+// *Facturacion
+@import './components/facturacion/empresa';
+@import './components/facturacion/particular';
+// *Recepcion
+
+// *Login
+@import './components/auth/login';
+
+// *Empresa
+
+@import './components/empresa/registro';
+@import './components/empresa/asignacion1';
+@import './components/empresa/resultados';
+
+// Recepcion
+
+@import './components/recepcion/usuarios';
+@import './components/recepcion/generarAtencion';
+
+
+//NAVBAR
+
+@import './components/Navbar/navbar';
